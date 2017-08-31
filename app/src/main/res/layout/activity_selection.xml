@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchParentVertical"
+    android:gravity="center"
+    android:padding="@dimen/bigPadding2"
+    tools:context="com.ferit.clowntastic.Selection">
+
+    <LinearLayout
+        style="@style/WrapContent"
+        android:layout_marginBottom="@dimen/bigPadding1">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="@dimen/bigPadding1"
+            android:src="@drawable/balloon_red" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:src="@drawable/green" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/WrapContent"
+        android:text="@string/clowntastic"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/bigTextSize11" />
+
+    <Button
+        android:id="@+id/bt_clownSelection"
+        style="@style/ButtonStyleSelection"
+        android:background="@color/red"
+        android:text="@string/clown" />
+
+    <Button
+        android:id="@+id/bt_customerSelection"
+        style="@style/ButtonStyleSelection"
+        android:background="@color/blue"
+        android:text="@string/customer" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        android:src="@drawable/balloon_blue" />
+
+</LinearLayout>

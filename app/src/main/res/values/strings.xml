@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Clowntastic</string>
+
+    <!-- Selection activity -->
+    <string name="clown">clown</string>
+    <string name="customer">customer</string>
+    <string name="clowntastic">Clowntastic</string>
+
+    <!-- LogIn activity -->
+    <string name="register">register</string>
+    <string name="sign_in">Log in</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="login">Log in</string>
+
+    <!-- Register activity -->
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="type">Type</string>
+    <string name="confirm_password">Confirm password</string>
+
+    <!-- Main activity -->
+    <string name="instruction">Select a clown for your party!</string>
+    <string name="instruction_clown">Confirm your orders!</string>
+    <string name="see_more">See more</string>
+    <string name="check_status_of_orders">Check status of orders</string>
+
+    <!-- Errors -->
+    <string name="error_missing">%1$s is missing</string>
+    <string name="volley_request_fail">Request failed please try again!</string>
+    <string name="error_password">Passwords do not match</string>
+    <string name="error_role_match">Chosen role doesn\'t match the logged in!</string>
+
+    <!-- Make order activity -->
+    <string name="select_clown">Select clown</string>
+    <string name="make_order">Make order</string>
+    <string name="date">Date</string>
+    <string name="set_date">Set date</string>
+    <string name="clown_upper_first">Clown</string>
+    <string name="package_name">Package</string>
+    <string name="address">Address</string>
+    <string name="order">order</string>
+    <string name="ok">OK</string>
+
+    <!-- Confirm Order activity -->
+    <string name="confirm_order">Confirm Order</string>
+    <string name="order_date">order date</string>
+    <string name="order_address">order address</string>
+    <string name="accept">accept</string>
+    <string name="refuse">refuse</string>
+
+    <!-- CheckOrders activity -->
+    <string name="check_your_orders_status">Check your orders status!</string>
+
+</resources>

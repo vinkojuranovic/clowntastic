@@ -186,7 +186,7 @@ public class API {
         }
 
         CustomJSONAuthObject jsonObjectRequest = new CustomJSONAuthObject(Request.Method.POST,
-                ApplicationConstants.API_BASE_URL + ApplicationConstants.ENDPOINT_ORDERS, jsonObject, new Response.Listener<JSONObject>() {
+                ApplicationConstants.API_BASE_URL + ApplicationConstants.ENDPOINT_ORDER, jsonObject, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
                 Log.e("RESPONSE", String.valueOf(response));

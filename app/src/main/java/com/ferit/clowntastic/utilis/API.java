@@ -77,8 +77,9 @@ public class API {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Log.e("ERROR2 LOG", error.getMessage());
-                requestListener.failed(activity.getString(R.string.volley_request_fail));
+                if(error == null) {
+                    requestListener.failed(activity.getString(R.string.volley_request_fail));
+                }
             }
         });
 

@@ -60,7 +60,7 @@ public class CheckOrdersAdapter extends BaseAdapter {
             confirmOrdersViewHolder.tvOrderClownEmail.setText(clown.getEmail());
         }
         Calendar calendar = Calendar.getInstance();
-        calendar.setTimeInMillis(Integer.valueOf(order.getDate()) * 1000);
+        calendar.setTimeInMillis(Long.valueOf(order.getDate()) * 1000);
         confirmOrdersViewHolder.tvOrderDate.setText(calendar.get(Calendar.DAY_OF_MONTH) + "." +
                 calendar.get(Calendar.MONTH) + "." + calendar.get(Calendar.YEAR) + ".");
         confirmOrdersViewHolder.vColorStatus.setBackgroundColor(order.getColor(parent.getContext()));

@@ -89,8 +89,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
             } else {
                 btRegister.setVisibility(View.GONE);
                 API registerService = API.getInstance(this);
-                Log.e("TYPE ASSA", selectedType.toString());
-                Log.e("TYPE ASSA", selectedType.name());
+
                 registerService.register(email, password, firstName, lastName, selectedType, new RequestListener() {
                     @Override
                     public void failed(String message) {
@@ -101,7 +100,6 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
 
                     @Override
                     public void finished(String message) {
-                        Log.e("FINISHED", message);
                         Register.this.finish();
                     }
                 });

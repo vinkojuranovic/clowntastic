@@ -37,7 +37,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:inputType="textEmailAddress"
-                    android:text="ladida@mail.com" />
+                    android:text="vinko@gmail.com" />
 
             </LinearLayout>
 
@@ -55,7 +55,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:inputType="textPassword"
-                    android:text="test" />
+                    android:text="1234" />
 
             </LinearLayout>
 

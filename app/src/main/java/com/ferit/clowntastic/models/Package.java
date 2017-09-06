@@ -13,12 +13,12 @@ public enum Package {
     private final Integer packageNumber;
     private final Double price;
 
-    private static Map<Integer, Package> map = new HashMap<>();
-
     Package(Integer packageNumber, Double price) {
         this.packageNumber = packageNumber;
         this.price = price;
     }
+
+    private static Map<Integer, Package> map = new HashMap<>();
 
     static {
         for (Package packageEnum : Package.values()) {

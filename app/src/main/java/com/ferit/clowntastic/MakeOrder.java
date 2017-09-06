@@ -84,7 +84,6 @@ public class MakeOrder extends AppCompatActivity implements View.OnClickListener
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 selectedPackage = Package.valueOf((int) id);
-                Log.e("SELECTED", String.valueOf(id));
             }
 
             @Override
@@ -112,7 +111,7 @@ public class MakeOrder extends AppCompatActivity implements View.OnClickListener
 
                 Calendar calendar = Calendar.getInstance();
                 Integer year = calendar.get(Calendar.YEAR);
-                Integer month = calendar.get(Calendar.MONTH);
+                Integer month = calendar.get(Calendar.MONTH) + 1;
                 Integer dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH);
                 final DatePicker datePicker = (DatePicker) dateTimeDialog.findViewById(R.id.dp_date);
                 final TimePicker timePicker = (TimePicker) dateTimeDialog.findViewById(R.id.tp_time);

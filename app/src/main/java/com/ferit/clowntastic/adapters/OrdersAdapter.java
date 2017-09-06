@@ -1,6 +1,7 @@
 package com.ferit.clowntastic.adapters;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,9 +34,7 @@ public class OrdersAdapter extends BaseAdapter {
     }
 
     @Override
-    public Order getItem(int position) {
-        return orders.get(position);
-    }
+    public Order getItem(int position) { return orders.get(position); }
 
     @Override
     public long getItemId(int position) {
@@ -60,9 +59,11 @@ public class OrdersAdapter extends BaseAdapter {
             ordersViewHolder.tvOrderCustomer.setText(customer.getFirstName() + " " + customer.getLastName());
         }
         Calendar calendar = Calendar.getInstance();
-        calendar.setTimeInMillis(Integer.valueOf(order.getDate()) * 1000);
+        Log.e("DATE", order.getDate());
+        Log.e("DATE", String.valueOf(Long.valueOf(order.getDate()) * 1000));
+        calendar.setTimeInMillis(Long.valueOf(order.getDate()) * 1000);
         ordersViewHolder.tvOrderDate.setText(calendar.get(Calendar.DAY_OF_MONTH) + "." +
-                calendar.get(Calendar.MONTH) + "." + calendar.get(Calendar.YEAR) + ".");
+                Integer.valueOf(calendar.get(Calendar.MONTH) + 1) + "." + calendar.get(Calendar.YEAR) + ".");
         ordersViewHolder.vvOrderStatusView.setBackgroundColor(order.getColor(parent.getContext()));
         return convertView;
     }

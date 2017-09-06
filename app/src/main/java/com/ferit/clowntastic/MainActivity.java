@@ -89,7 +89,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void setUpUIClown() {
         mainListView = (ListView) findViewById(R.id.lv_mainListView);
-        mainListView = (ListView) findViewById(R.id.lv_mainListView);
         tvInstruction = (TextView) findViewById(R.id.tv_instruction);
 
         final List<Order> orders = databaseHelper.getAllOrders();
@@ -100,17 +99,12 @@ public class MainActivity extends AppCompatActivity {
         mainListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent makeOrderIntent = new Intent(MainActivity.this, ConfirmOrder.class);
-                Log.e("SEND ID", String.valueOf(id));
-                makeOrderIntent.putExtra(ApplicationConstants.KEY_ID, id);
-                startActivity(makeOrderIntent);
+                Intent confirmOrderIntent = new Intent(MainActivity.this, ConfirmOrder.class);
+                confirmOrderIntent.putExtra(ApplicationConstants.KEY_ID, id);
+                startActivity(confirmOrderIntent);
             }
         });
     }
 
-    public void developerTools(View view) {
-        Intent intent = new Intent(this, AndroidDatabaseManager.class);
-        startActivity(intent);
-    }
 
 }
